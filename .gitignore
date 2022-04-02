@@ -1,0 +1,6 @@
+.idea
+.vscode
+node_modules
+dist
+build/lib/main.js.LICENSE.txt
+build
