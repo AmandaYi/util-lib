@@ -21,7 +21,7 @@ module.exports = {
 	},
 	resolve: {
 		// 兼容处理后缀名，比如导入导出的时候，不需要写后缀名，让webpack进行自我推断
-		extensions: [".js", ".vue"]
+		extensions: [".js", ".ts", ".vue"]
 	},
 	module: {
 		rules: [
@@ -41,6 +41,10 @@ module.exports = {
 						["@babel/preset-env"]
 					],
 				},
+			},
+			{
+				test: /\.ts$/,
+				loader: 'babel-loader',
 			}
 		]
 	},

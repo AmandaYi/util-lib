@@ -1,5 +1,5 @@
 const util = {
-	isArray(v) {
+	isArray(v: any): boolean {
 		if (Array.isArray) {
 			return Array.isArray(v);
 		} else {
