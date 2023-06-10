@@ -1,3 +1,3 @@
-import {util} from "./util.js"
+import {util} from "./util"
 
 export {util}
